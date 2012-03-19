@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-main()
-{
-  int fahr;
+main() {
+  double fahrenheit;
 
   /* Header */
   
   printf("Fahrenheit Celsius\n");
 
   
-  for (fahr = 0; fahr <= 300; fahr = fahr + 20)
-    printf("%10d %6.2f\n", fahr, ( 5.0 / 9.0 ) * ( fahr - 32 ));
+  for (fahrenheit = 300; fahrenheit >= 0; fahrenheit = fahrenheit - 20) {
+      double celcius = ( 5.0 / 9.0 ) * ( fahrenheit - 32 );
+      printf("%10f %6.2f\n", fahrenheit, celcius);
+    }
 }

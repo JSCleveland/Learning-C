@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/* This entire program could be optimized by making cel and fahr Integers instead of Floats */
+
+/* This would be incorrect if the step weren't divisible by 5 */
+
 main()
 {
   float cel, fahr;
@@ -11,13 +15,13 @@ main()
 
   /* Header goes here! */
 
-  printf("Celsius Fahrenheit");
+  printf("Celsius Fahrenheit\n");
 
   cel = low;
   while (cel <= up)
     {
-      fahr = (9.0 / 5.0) * cel + 32;
-      printf("%6f %10.3f", cel, fahr);
+      fahr = (9.0 / 5.0) * cel + 32.0;
+      printf("%6.0f %10.0f\n", cel, fahr);
       cel = cel + step;
     }
 }

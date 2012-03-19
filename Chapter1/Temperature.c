@@ -1,19 +1,24 @@
 #include <stdio.h>
 
-int main()
+main()
 {
-  int fahr, cel;
+  float fahr, cel;
   int low, up, step;
 
   low = 0;
   up = 300;
   step = 20;
 
+  /* This is the Heading. */
+
+  printf("Fahrenheit Celsius\n");
+  
+
   fahr = low;
   while (fahr <= up)
     {
-      cel = 5 * (fahr-32) / 9;
-      printf("%3d %6d\n", fahr, cel);
+      cel = (5.0 / 9.0) * (fahr - 32);
+      printf("%10.0f %7.1f\n", fahr, cel);
       fahr = fahr + step;
     }
 }
