@@ -12,5 +12,16 @@ main() {
   printf("Press Return for output");
 
   c = (getchar() != EOF);
-  printf("If the following number is 1 or 0, then EOF is 1 or 0 as the book stated: %d\n", c);
+  
+  /* Solve True or False  */
+  
+  if(c = 0) 
+    printf("EOF is 0, so the statement is true.");
+  else {
+    if(c = 1) {
+      printf("EOF is 1, so the statement is true.");
+    }  else {
+      printf("EOF is neither 1 or 0, so the statement is false.");
+    }
+  }
 }
